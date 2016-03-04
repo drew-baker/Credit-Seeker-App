@@ -12,17 +12,17 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <script type="text/javascript">
-        var appInsights=window.appInsights||function(config){
-            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace","Ajax"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace", "Ajax"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
         }({
-            instrumentationKey:"1804c39f-4010-4fe4-a96e-f509896e1c94"
+            instrumentationKey: "1804c39f-4010-4fe4-a96e-f509896e1c94"
         });
-        
-        window.appInsights=appInsights;
+
+        window.appInsights = appInsights;
         appInsights.trackPageView();
     </script>
 </head>
@@ -68,18 +68,13 @@
                 </div>
             </div>
         </div>
-        <div class="container body-content">
+        <div class="container body-content" style="border-style:solid; border-width:1px; border-radius:5px;padding:5px">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3 class="panel-heading">Panel Heading</h3>
-                </div>
-                <div class="panel-body">Panel Body</div>
-            </div>
             </asp:ContentPlaceHolder>
-              <footer style="position:fixed; bottom:0; width:100%; height:35pt; border-style:solid; border-width:1px; border-radius:5px">
-                <p style="text-align:center">Footer Company Info<br />Multiple Links</p>
-              </footer>
+            <div class="panel-footer" style="border-style:solid; border-width:1px; border-radius:5px;padding:5px">
+                <p style="text-align: center">Footer Company Info<br />
+                    Multiple Links</p>
+            </div>
         </div>
     </form>
 </body>

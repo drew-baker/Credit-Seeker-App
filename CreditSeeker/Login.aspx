@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
 
-    <div class="container" style="border-style:solid; border-width:1px; border-radius:7px">
+    <div class="container-fluid" style="border-style:solid; border-width:1px; border-radius:7px;padding:5px">
         <div class="row">
             <div class="col-sm-12"><h2 style="text-align:center"><%: Title %></h2></div>
         </div>
