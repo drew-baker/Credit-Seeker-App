@@ -3,77 +3,65 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2 style="text-align:center"><%: Title %> </h2>
 
-    <asp:Table ID="tblOutsideContainer" CellPadding="5" CellSpacing="5" BorderWidth="1" Width="100%" runat="server">
-      <asp:TableRow>
-          <asp:TableCell>
-            <asp:Table ID="tblNav" CellPadding="5" CellSpacing="5" Width="75pt" runat="server">
-                <asp:TableRow>
-                    <asp:TableCell>
-                        <asp:Button ID="btnHome" Text="Home" runat="server" Width="100%" />
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>
-                        <asp:Button ID="btnViewAcct" Text="View Acct" Width="100%" runat="server" />
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>
-                        <asp:Button ID="btnManageAcct" Text="Mng Acct" Enabled="false" Width="100%" runat="server" />
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow>
-                    <asp:TableCell>
-                        <asp:Button ID="bntBills" Text="Bills" Enabled="false" runat="server" Width="100%" Height="8mm" />
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow><asp:TableCell>&nbsp</asp:TableCell></asp:TableRow>
-            </asp:Table>
-         </asp:TableCell>
-         <asp:TableCell VerticalAlign="Top" Width="100%">
-             <asp:Table ID="tblClientInfo" CellPadding="10" CellSpacing="10" runat="server">
-                 <asp:TableRow>
-                     <asp:TableCell>
-                         <asp:Label  ID="lblClientName" runat="server" Text="Client Name"></asp:Label>
-                     </asp:TableCell>
-                     <asp:TableCell>
-                         <asp:Label  ID="ClientName" runat="server" Text="My Name"></asp:Label>
-                     </asp:TableCell>
-                 </asp:TableRow>
-                 <asp:TableRow>
-                     <asp:TableCell>
-                         <asp:Label ID="lblClientAddress" runat="server" Text="Client Address"></asp:Label>
-                     </asp:TableCell>
-                     <asp:TableCell>
-                         <asp:Label  ID="ClientAddress" runat="server" Text="555 Address Holder"></asp:Label>
-                     </asp:TableCell>
-                 </asp:TableRow>
-                 <asp:TableRow>
-                     <asp:TableCell>
-                         <asp:Label ID="lblCity" runat="server" Text="City"></asp:Label>
-                     </asp:TableCell>
-                     <asp:TableCell>
-                         <asp:Label  ID="City" runat="server" Text="City Name"></asp:Label>
-                     </asp:TableCell>
-                 </asp:TableRow>
-                 <asp:TableRow>
-                     <asp:TableCell>
-                         <asp:Label ID="lblState" runat="server" Text="State"></asp:Label>
-                     </asp:TableCell>
-                     <asp:TableCell>
-                         <asp:Label  ID="State" runat="server" Text="State Name"></asp:Label>
-                     </asp:TableCell>
-                 </asp:TableRow>
-                 <asp:TableRow>
-                     <asp:TableCell>
-                         <asp:Label ID="lblZipCode" runat="server" Text="Zip Code"></asp:Label>
-                     </asp:TableCell>
-                     <asp:TableCell>
-                         <asp:Label  ID="ZipCode" runat="server" Text="99999"></asp:Label>
-                     </asp:TableCell>
-                 </asp:TableRow>
-             </asp:Table>
-         </asp:TableCell>
-      </asp:TableRow>
-    </asp:Table>
+    <div class="container" style="border-style:solid; border-width:1px; border-radius:7px">
+        <div class="row" style="border-style:solid; border-width:1px; border-radius:7px">
+            <div class="col-sm-2" style="border-style:solid; border-width:1px; border-radius:7px; width:118px">
+                <div class="row" style="padding:2px 5px">
+                  <asp:Button CssClass="btn btn-primary" Text="Home" runat="server" Width="108px" style="border-style:solid; border-width:1px; border-radius:5px"/>
+                </div>
+                <div class="row" style="padding:2px 5px">
+                  <asp:Button CssClass="btn btn-primary" Text="View Acct" runat="server" Width="108px" style="border-style:solid; border-width:1px; border-radius:5px"/>
+                </div>
+                <div class="row" style="padding:2px 5px">
+                  <asp:Button CssClass="btn btn-primary disabled" Text="Mng Acct" runat="server" Width="108px" style="border-style:solid; border-width:1px; border-radius:5px"/>
+                </div>
+                <div class="row" style="padding:2px 5px">
+                  <asp:Button CssClass="btn btn-primary disabled" Text="Bills" runat="server" Width="108px" style="border-style:solid; border-width:1px; border-radius:5px"/>
+                </div>
+                <div class="row" style="padding:2px 5px">
+                  <asp:Button CssClass="btn btn-primary disabled" Text="Transactions" runat="server" Width="108px" style="border-style:solid; border-width:1px; border-radius:5px"/>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="row" style="padding:2px 15px">&nbsp</div>
+                <div class="row" style="padding:2px 15px">
+                  <asp:Label Text="Client name:" runat="server" />
+                </div>
+                <div class="row" style="padding:2px 15px">
+                    <asp:Label Text="Client Address:" runat="server" />
+                </div>
+                <div class="row" style="padding:2px 15px">
+                    <asp:Label Text="City:" runat="server" />
+                </div>
+                <div class="row" style="padding:2px 15px">
+                    <asp:Label Text="State:" runat="server" />
+                </div>
+                <div class="row" style="padding:2px 15px">
+                    <asp:Label Text="Zip Code:" runat="server" />
+                </div>
+                <div class="row" style="padding:2px 15px">&nbsp</div>
+            </div>
+            <div class="col-sm-3">
+                <div class="row" style="padding:2px 5px">&nbsp</div>
+                <div class="row" id="client_name" style="padding:2px 5px"><asp:Label Text="Drew Baker" runat="server" /></div>
+                <div class="row" id="client_address" style="padding:2px 5px"><asp:Label Text="528 W Grove St" runat="server" /></div>
+                <div class="row" id="city_label" style="padding:2px 5px"><asp:Label Text="Mishawaka" runat="server" /></div>
+                <div class="row" id="state_label" style="padding:2px 5px"><asp:Label Text="IN" runat="server" /></div>
+                <div class="row" id="zip_label" style="padding:2px 5px"><asp:Label Text="46545" runat="server" /></div>
+                <div class="row" style="padding:2px 5px">&nbsp</div>
+            </div>
+            <div class="col-sm-1">
+                <div class="row">&nbsp</div>
+            </div>
+            <div class="col-sm-2">
+                <div class="row">&nbsp</div>
+                <div class="row">&nbsp</div>
+                <div class="row">&nbsp</div>
+                <div class="row">&nbsp</div>
+                <div class="row">
+                    <asp:Button CssClass="btn btn-primary" Text="Edit Account Info" runat="server" />
+                </div>
+            </div>
+        </div>
+    </div>
 </asp:Content>
