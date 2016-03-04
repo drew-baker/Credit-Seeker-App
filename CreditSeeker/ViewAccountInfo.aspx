@@ -3,8 +3,8 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2 style="text-align:center"><%: Title %> </h2>
 
-    <div class="container" style="border-style:solid; border-width:1px; border-radius:7px">
-        <div class="row" style="border-style:solid; border-width:1px; border-radius:7px">
+    <div class="container-fluid">
+        <div class="row" style="border-style:solid; border-width:1px; border-radius:7px;padding:5px">
             <div class="col-sm-2" style="border-style:solid; border-width:1px; border-radius:7px; width:118px">
                 <div class="row" style="padding:2px 5px">
                   <asp:Button CssClass="btn btn-primary" Text="Home" runat="server" Width="108px" style="border-style:solid; border-width:1px; border-radius:5px"/>

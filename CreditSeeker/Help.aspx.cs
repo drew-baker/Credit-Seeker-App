@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace CreditSeeker
 {
-    public partial class Contact : Page
+    public partial class Help : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
