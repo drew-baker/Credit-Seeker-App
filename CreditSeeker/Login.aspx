@@ -1,49 +1,48 @@
-﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="CreditSeeker.About" %>
+﻿<%@ Page Title="Login Form" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="CreditSeeker.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2 style="text-align:center"><%: Title %> Form</h2>
-    <asp:Table ID="Table1" CellPadding="10" CellSpacing="10" runat="server" style="margin-top:10%; margin-left:15%">
-        <asp:TableRow>
-            <asp:TableCell>
-                <asp:Label ID="lblUserName" runat="server" Text="Username:"></asp:Label>
-            </asp:TableCell>
-            <asp:TableCell>
-                <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
-            </asp:TableCell>
-        </asp:TableRow>
-        <asp:TableRow>
-            <asp:TableCell>
-                <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
-            </asp:TableCell>
-            <asp:TableCell>
-                <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
-            </asp:TableCell>
-        </asp:TableRow>
-        <asp:TableRow>
-            <asp:TableCell>&nbsp</asp:TableCell>
-            <asp:TableCell style="text-align:center">
-                <asp:Button ID="btnLogin" runat="server" Text="Login" />
-            </asp:TableCell>
-        </asp:TableRow>
-    </asp:Table>
-    <asp:Table ID="Table2" runat="server" CellPadding="10" CellSpacing="10" style="margin-left:25%">
-        <asp:TableRow>
-            <asp:TableCell>
-                <asp:Button ID="btnForgetPassword" runat="server" Text="Forget Password" />
-            </asp:TableCell>
-            <asp:TableCell>
-                <asp:Button ID="btnHelp" runat="server" Text="Help" />
-            </asp:TableCell>
-        </asp:TableRow>
-        <asp:TableRow>
-            <asp:TableCell>
-                <asp:Button ID="btnNeedToRegister" runat="server" Text="Need to register?" />
-            </asp:TableCell>
-            <asp:TableCell>
-                <asp:Button ID="btnRegister" runat="server" Text="Register" />
-            </asp:TableCell>
-        </asp:TableRow>
-    </asp:Table>
+    
 
-
+    <div class="container" style="border-style:solid; border-width:1px; border-radius:7px">
+        <div class="row">
+            <div class="col-sm-12"><h2 style="text-align:center"><%: Title %></h2></div>
+        </div>
+        <div class="row" style="padding-bottom:2px">
+            <div class="col-sm-2">&nbsp</div>
+            <div class="col-sm-1"><asp:Label Text="Username:" runat="server"></asp:Label></div>
+            <div class="col-sm-3"><asp:TextBox ID="user_name" runat="server" style="border-style:solid; border-width:1px; border-radius:5px"></asp:TextBox>&nbsp*</div>
+        </div>
+        <div class="row" style="padding-top:2px;padding-bottom:2px">
+            <div class="col-sm-2">&nbsp</div>
+            <div class="col-sm-1"><asp:Label Text="Password:" runat="server"></asp:Label></div>
+            <div class="col-sm-3"><asp:TextBox ID="password" runat="server" style="border-style:solid; border-width:1px; border-radius:5px"></asp:TextBox>&nbsp*</div>
+        </div>
+        <div class="row" style="padding-top:2px;padding-bottom:2px">
+            <div class="col-sm-4">&nbsp</div>
+            <div class="col-sm-2">
+                <asp:Button CssClass="btn btn-primary" ID="login" runat="server" Text="Login"  style="border-style:solid; border-width:1px; border-radius:5px"/>
+            </div>
+        </div>
+        <div class="row" style="">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+        <div class="row" style="padding-top:2px;padding-bottom:2px">
+            <div class="col-sm-3">&nbsp</div>
+            <div class="col-sm-2">
+                <asp:Button CssClass="btn btn-danger" ID="forget_password" runat="server" Text="Forget password" style="border-style:solid; border-width:1px; border-radius:5px"/>
+            </div>
+            <div class="col-sm-1">
+                <asp:Button CssClass="btn btn-info" ID="help" runat="server" Text="Help" style="border-style:solid; border-width:1px; border-radius:5px"/>
+            </div>
+        </div>
+        <div class="row" style="padding-top:2px;padding-bottom:2px">
+            <div class="col-sm-3">&nbsp</div>
+            <div class="col-sm-2">
+                <asp:Button CssClass="btn btn-info" ID="need_to_register" runat="server" Text="Need to register?" style="border-style:solid; border-width:1px; border-radius:5px"/>
+            </div>
+            <div class="col-sm-1">
+                <asp:Button CssClass="btn btn-info" ID="register" runat="server" Text="Register" style="border-style:solid; border-width:1px; border-radius:5px"/>
+            </div>
+        </div>
+    </div>
 </asp:Content>
