@@ -5,17 +5,17 @@
 
     <div class="container-fluid" style="border-style:solid; border-width:1px; border-radius:7px;padding:5px">
         <div class="row">
-            <div class="col-sm-12"><h2 style="text-align:center"><%: Title %></h2></div>
+            <div class="col-sm-12"><h4 style="text-align:center"><%: Title %></h4></div>
         </div>
         <div class="row" style="padding-bottom:2px">
             <div class="col-sm-2">&nbsp</div>
             <div class="col-sm-1"><asp:Label Text="Username:" runat="server"></asp:Label></div>
-            <div class="col-sm-3"><asp:TextBox ID="user_name" runat="server" style="border-style:solid; border-width:1px; border-radius:5px"></asp:TextBox>&nbsp*</div>
+            <div class="col-sm-3"><asp:TextBox ID="user_name" runat="server" style="border-style:solid; border-width:1px; border-radius:5px"></asp:TextBox><span style="color:red">&nbsp*</span></div>
         </div>
         <div class="row" style="padding-top:2px;padding-bottom:2px">
             <div class="col-sm-2">&nbsp</div>
             <div class="col-sm-1"><asp:Label Text="Password:" runat="server"></asp:Label></div>
-            <div class="col-sm-3"><asp:TextBox ID="password" runat="server" style="border-style:solid; border-width:1px; border-radius:5px"></asp:TextBox>&nbsp*</div>
+            <div class="col-sm-3"><asp:TextBox ID="password" runat="server" style="border-style:solid; border-width:1px; border-radius:5px"></asp:TextBox><span style="color:red">&nbsp*</span></div>
         </div>
         <div class="row" style="padding-top:2px;padding-bottom:2px">
             <div class="col-sm-4">&nbsp</div>
