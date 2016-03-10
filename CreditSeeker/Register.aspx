@@ -5,10 +5,10 @@
         <div class="row" style="border-style: solid; border-width: 1px; border-radius: 7px; padding: 5px">
             <div class="col-sm-2" style="border-style: solid; border-width: 1px; border-radius: 7px; width: 118px">
                 <div class="row" style="padding: 2px 5px">
-                    <asp:Button CssClass="btn btn-primary" Text="Home" runat="server" Width="108px" Style="border-style: solid; border-width: 1px; border-radius: 5px" />
+                    <asp:Button CssClass="btn btn-primary" Text="Home" runat="server" Width="108px" Style="border-style: solid; border-width: 1px; border-radius: 5px" OnClick="Unnamed1_Click" />
                 </div>
                 <div class="row" style="padding: 2px 5px">
-                    <asp:Button CssClass="btn btn-primary" Text="View Acct" runat="server" Width="108px" Style="border-style: solid; border-width: 1px; border-radius: 5px" />
+                    <asp:Button CssClass="btn btn-primary disabled" Text="View Acct" runat="server" Width="108px" Style="border-style: solid; border-width: 1px; border-radius: 5px" />
                 </div>
                 <div class="row" style="padding: 2px 5px">
                     <asp:Button CssClass="btn btn-primary disabled" Text="Mng Acct" runat="server" Width="108px" Style="border-style: solid; border-width: 1px; border-radius: 5px" />

@@ -150,23 +150,6 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <EntityDeploy Include="CustomerService.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CustomerService.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="CustomerService.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CustomerService.edmx</DependentUpon>
-      <LastGenOutput>CustomerService.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="CustomerService.edmx.diagram">
-      <DependentUpon>CustomerService.edmx</DependentUpon>
-    </Content>
-    <Content Include="CustomerService.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CustomerService.edmx</DependentUpon>
-      <LastGenOutput>CustomerService.cs</LastGenOutput>
-    </Content>
     <None Include="Properties\PublishProfiles\CreditSeeker.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Register.aspx" />
@@ -220,28 +203,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application.cs">
-      <DependentUpon>CustomerService.tt</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="Client.cs">
-      <DependentUpon>CustomerService.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerService.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CustomerService.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerService.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CustomerService.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerService.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CustomerService.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -274,9 +236,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Membership.cs">
-      <DependentUpon>CustomerService.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -284,9 +243,6 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Role.cs">
-      <DependentUpon>CustomerService.tt</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -301,9 +257,6 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
-    </Compile>
-    <Compile Include="User.cs">
-      <DependentUpon>CustomerService.tt</DependentUpon>
     </Compile>
     <Compile Include="ViewAccountInfo.aspx.cs">
       <DependentUpon>ViewAccountInfo.aspx</DependentUpon>

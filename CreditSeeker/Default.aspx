@@ -17,10 +17,10 @@
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <div class="row" style="padding-top: 2px; padding-bottom: 2px">
-                    <asp:Button ID="login" CssClass="btn btn-primary" runat="server" Text="Login" Style="border-style: solid; border-width: 1px; border-radius: 5px; width:100%" />
+                    <asp:Button ID="login" CssClass="btn btn-primary" runat="server" Text="Login" Style="border-style: solid; border-width: 1px; border-radius: 5px; width:100%" OnClick="login_Click" />
                 </div>
                 <div class="row" style="padding-top: 2px; padding-bottom: 2px">
-                    <asp:Button ID="register" CssClass="btn btn-primary" runat="server" Text="Register" Style="border-style: solid; border-width: 1px; border-radius: 5px; width:100%" />
+                    <asp:Button ID="register" CssClass="btn btn-primary" runat="server" Text="Register" Style="border-style: solid; border-width: 1px; border-radius: 5px; width:100%" OnClick="register_Click" />
                 </div>
             </div>
             <div class="col-sm-4">

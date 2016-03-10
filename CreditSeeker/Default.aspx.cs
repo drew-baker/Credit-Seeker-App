@@ -13,5 +13,15 @@ namespace CreditSeeker
         {
 
         }
+
+        protected void login_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Login.aspx");
+        }
+
+        protected void register_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Register.aspx");
+        }
     }
 }
