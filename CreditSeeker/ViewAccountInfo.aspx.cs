@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace CreditSeeker
 {
@@ -11,7 +13,24 @@ namespace CreditSeeker
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            int AppID = Int32.Parse( Request.QueryString["ApplicationID"] );
+            int ClientID = Int32.Parse(Request.QueryString["ClientID"]);
+            string strCmd = "select * from Clients where ClientID =  " + ClientID + " and ApplicationID = " + AppID;
 
+            SqlConnection conn = new SqlConnection(@"Data Source=(localDb)\ProjectsV12;Initial Catalog=CustSvcData;Integrated Security=SSPI;");
+            SqlDataReader rdr = null;
+
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(strCmd, conn);
+
+            rdr = cmd.ExecuteReader();
+            rdr.Read();
+
+            lblName.Text = rdr["AccountName"].ToString();
+            lblAddress.Text = rdr["Street1"].ToString();
+            lblCity.Text = rdr["City"].ToString();
+            lblState.Text = rdr["State"].ToString();
+            lblZipCode.Text = rdr["ZipCode"].ToString();
         }
 
         protected void Unnamed1_Click(object sender, EventArgs e)

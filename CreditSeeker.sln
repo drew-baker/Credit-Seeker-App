@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configura
 		PublishScripts\Configurations\CreditSeeker-WAWS-dev.json = PublishScripts\Configurations\CreditSeeker-WAWS-dev.json
 	EndProjectSection
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CustSvcData", "..\..\Users\drew\Documents\Visual Studio 2013\Projects\CustSvcData\CustSvcData\CustSvcData.sqlproj", "{4154F805-CE2B-4308-B3D8-2000093F3136}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,12 @@ Global
 		{2B52EF27-08DE-4017-B17E-FEAEAD3054B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B52EF27-08DE-4017-B17E-FEAEAD3054B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B52EF27-08DE-4017-B17E-FEAEAD3054B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4154F805-CE2B-4308-B3D8-2000093F3136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4154F805-CE2B-4308-B3D8-2000093F3136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4154F805-CE2B-4308-B3D8-2000093F3136}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4154F805-CE2B-4308-B3D8-2000093F3136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4154F805-CE2B-4308-B3D8-2000093F3136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4154F805-CE2B-4308-B3D8-2000093F3136}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

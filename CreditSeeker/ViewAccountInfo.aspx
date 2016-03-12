@@ -25,38 +25,38 @@
                     <div class="row" style="padding: 2px 15px">
                         <h4>&nbsp</h4>
                     </div>
-                    <div class="row" style="padding: 2px 15px">
-                        <asp:Label Text="Client name:" runat="server" />
+                 <div class="row" style="padding-left:10px">
+                        <asp:Label CssClass="form-control" AssociatedControlID="lblName" Text="Client name:" runat="server" />
                     </div>
-                    <div class="row" style="padding: 2px 15px">
-                        <asp:Label Text="Client Address:" runat="server" />
+                    <div class="row" style="padding-left:10px">
+                        <asp:Label CssClass="form-control" AssociatedControlID="lblAddress" Text="Client Address:" runat="server" />
                     </div>
-                    <div class="row" style="padding: 2px 15px">
-                        <asp:Label Text="City:" runat="server" />
+                    <div class="row" style="padding-left:10px">
+                        <asp:Label CssClass="form-control" AssociatedControlID="lblCity" Text="City:" runat="server" />
                     </div>
-                    <div class="row" style="padding: 2px 15px">
-                        <asp:Label Text="State:" runat="server" />
+                    <div class="row" style="padding-left:10px">
+                        <asp:Label CssClass="form-control" AssociatedControlID="lblState" Text="State:" runat="server" />
                     </div>
-                    <div class="row" style="padding: 2px 15px">
-                        <asp:Label Text="Zip Code:" runat="server" />
+                    <div class="row" style="padding-left:10px">
+                        <asp:Label CssClass="form-control" AssociatedControlID="lblZipCode" Text="Zip Code:" runat="server" />
                     </div>
-                    <div class="row" style="padding: 2px 15px">&nbsp</div>
+                    <div class="row" style="padding:3px 5px">&nbsp</div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="row" style="padding: 2px 5px">
+                    <div class="row">
                         <h4 style="text-align: center"><%: Title %></h4>
                     </div>
-                    <div class="row" id="client_name" style="padding: 2px 5px">
-                        <asp:Label Text="Drew Baker" runat="server" /></div>
-                    <div class="row" id="client_address" style="padding: 2px 5px">
-                        <asp:Label Text="528 W Grove St" runat="server" /></div>
-                    <div class="row" id="city_label" style="padding: 2px 5px">
-                        <asp:Label Text="Mishawaka" runat="server" /></div>
-                    <div class="row" id="state_label" style="padding: 2px 5px">
-                        <asp:Label Text="IN" runat="server" /></div>
-                    <div class="row" id="zip_label" style="padding: 2px 5px">
-                        <asp:Label Text="46545" runat="server" /></div>
-                    <div class="row" style="padding: 2px 5px">&nbsp</div>
+                    <div class="row" style="padding: 3px 5px">
+                        <asp:Label id="lblName" CssClass="form-control" Text="" runat="server" /></div>
+                    <div class="row" style="padding: 3px 5px">
+                        <asp:Label id="lblAddress" CssClass="form-control" Text="" runat="server" /></div>
+                    <div class="row" style="padding: 3px 5px">
+                        <asp:Label id="lblCity" Text="" CssClass="form-control" runat="server" /></div>
+                    <div class="row" style="padding: 3px 5px">
+                        <asp:Label id="lblState" Text="" CssClass="form-control" runat="server" /></div>
+                    <div class="row" style="padding: 3px 5px">
+                        <asp:Label id="lblZipCode" Text="" CssClass="form-control" runat="server" /></div>
+                    <div class="row" style="padding: 3px 5px">&nbsp</div>
                 </div>
                 <div class="col-sm-1">
                     <div class="row">&nbsp</div>
