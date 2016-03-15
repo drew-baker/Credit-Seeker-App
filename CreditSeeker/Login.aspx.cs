@@ -9,8 +9,17 @@ using System.Data.SqlClient;
 
 namespace CreditSeeker
 {
-    public partial class About : Page
+
+    public partial class Login : Page
     {
+        public void MsgBox(String ex, Page pg, Object obj)
+        {
+            string s = "<SCRIPT language='javascript'>alert('" + ex.Replace("\r\n", "\\n").Replace("'", "") + "'); </SCRIPT>";
+            Type cstype = obj.GetType();
+            ClientScriptManager cs = pg.ClientScript;
+            cs.RegisterClientScriptBlock(cstype, s, s.ToString());
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -33,13 +42,20 @@ namespace CreditSeeker
 
                 if (strName == rdr["UserName"].ToString() && strPassword == rdr["Password"].ToString())
                 {
-                    int ClientID = Int32.Parse(rdr["ClientID"].ToString());
-                    int AppID = Int32.Parse(rdr["ApplicationID"].ToString());
-                    string strViewAcctUrl = "~/ViewAccountInfo?ClientID=" + rdr["ClientID"].ToString()  +
+                    Session["UserName"] = strName;
+                    Session["ApplicationID"] = rdr["ApplicationID"].ToString();
+                    Session["ClientID"] = rdr["ClientID"].ToString();
+
+                    string strViewAcctUrl = "~/ViewAccountInfo?ClientID=" + rdr["ClientID"].ToString() +
                                             "&ApplicationID=" + rdr["ApplicationID"].ToString();
                     Response.Redirect(strViewAcctUrl);
                 }
-
+                else
+                    MsgBox("Invalid user name or password.", this.Page, this);
+            }
+            catch (Exception ex)
+            {
+                MsgBox("Invalid user name or password.", this.Page, this);
             }
             finally
             {

@@ -13,5 +13,20 @@ namespace CreditSeeker
         {
 
         }
+
+        protected void btnHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Default.aspx");
+        }
+
+        protected void btnViewAccount_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ViewAccountInfo.aspx");
+        }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
